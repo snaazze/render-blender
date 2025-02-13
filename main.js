@@ -1,5 +1,6 @@
+// Import Three.js and GLTFLoader properly
 import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.min.js";
-import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.128/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three/examples/jsm/loaders/GLTFLoader.js";
 
 // Scene Setup
 const scene = new THREE.Scene();
@@ -15,7 +16,7 @@ scene.add(light);
 // Load GLTF Model
 const loader = new GLTFLoader();
 loader.load(
-    "https://snaazze.github.io/render-blender/scene.gltf",  // Adjust path if needed
+    "https://snaazze.github.io/render-blender/scene.gltf", // Use full URL
     function (gltf) {
         scene.add(gltf.scene);
         camera.position.z = 5;
