@@ -15,7 +15,7 @@ scene.add(light);
 // Load GLTF Model
 const loader = new GLTFLoader();
 loader.load(
-    "https://cors-anywhere.herokuapp.com/https://snaazze.github.io/render-blender/scene.gltf",  // Adjust path if needed
+    "https://snaazze.github.io/render-blender/scene.gltf",  // Adjust path if needed
     function (gltf) {
         scene.add(gltf.scene);
         camera.position.z = 5;
