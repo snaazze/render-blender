@@ -1,6 +1,6 @@
 // ✅ Import Three.js & GLTFLoader properly
-import * as THREE from "https://unpkg.com/three@0.150.1/build/three.module.js";
-import { GLTFLoader } from "https://unpkg.com/three@0.150.1/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "https://cdn.skypack.dev/three@0.150.1";
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.150.1/examples/jsm/loaders/GLTFLoader.js";
 
 // ✅ Scene Setup
 const scene = new THREE.Scene();
