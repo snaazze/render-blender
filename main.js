@@ -1,6 +1,6 @@
-// Import Three.js and GLTFLoader properly
-import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.min.js";
-import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three/examples/jsm/loaders/GLTFLoader.js";
+// Import Three.js and GLTFLoader using a proper ES module CDN
+import * as THREE from "https://unpkg.com/three@0.128.0/build/three.module.js";
+import { GLTFLoader } from "https://unpkg.com/three@0.128.0/examples/jsm/loaders/GLTFLoader.js";
 
 // Scene Setup
 const scene = new THREE.Scene();
