@@ -20,14 +20,14 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
 
-        // Add Lighting
+        // Lighting
         const light = new THREE.AmbientLight(0xffffff, 1);
         scene.add(light);
 
         // Load GLTF Model
         const loader = new THREE.GLTFLoader();
         loader.load(
-            "scene.gltf",  // If in a subfolder, change to "models/scene.gltf"
+            "scene.gltf",  // Adjust path if the file is in a subfolder
             function (gltf) {
                 scene.add(gltf.scene);
                 camera.position.z = 5;
@@ -45,7 +45,7 @@
         }
         animate();
 
-        // Handle Window Resizing
+        // Resize Handling
         window.addEventListener("resize", () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
